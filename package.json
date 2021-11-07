@@ -1,0 +1,21 @@
+{
+  "name": "super-terminal",
+  "version": "1.0.0",
+  "description": "This is a super-terminal for node js .",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.ts"
+  },
+  "keywords": [
+    "terminal",
+    "super-terminal",
+    "nodejs-terminal",
+    "utility"
+  ],
+  "author": "Hasnath Abdullah Akando",
+  "license": "MIT",
+  "devDependencies": {
+    "debug": "^4.3.2",
+    "jest": "^27.3.1"
+  }
+}
