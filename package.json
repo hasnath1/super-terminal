@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "nodemon index.ts",
     "lsLinux": "nodemon lib/linux/ls/ls.ts",
+    "linux": "nodemon lib/linux/linux.ts",
+    "windows": "nodemon lib/windows/windows.ts",
     "test": "jest"
   },
   "keywords": [
