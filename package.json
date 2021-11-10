@@ -4,7 +4,7 @@
   "description": "This is a super-terminal for node js .",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.ts",
+    "dev": "cross-env  DEBUG=FILE_CLASS nodemon index.ts",
     "lsLinux": "nodemon lib/linux/ls/ls.ts",
     "linux": "nodemon lib/linux/linux.ts",
     "windows": "nodemon lib/windows/windows.ts",
@@ -29,10 +29,12 @@
     "debug": "^4.3.2",
     "jest": "^27.3.1",
     "nodemon": "^2.0.14",
+    "supports-color": "^9.0.2",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
   },
   "dependencies": {
+    "@types/debug": "^4.1.7",
     "@types/shelljs": "^0.8.9",
     "shelljs": "^0.8.4"
   }

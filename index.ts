@@ -1,6 +1,16 @@
+import { resolve } from "path";
 import { ls } from "./lib/commands/ls";
-import _ from "shelljs";
 
-// ls(".");
+const x = ls("./test");
 
-const x = _.ls(".");
+x.then(data => {
+  data.forEach(file => {
+    const path = resolve("./test/testname/");
+
+    console.log(file.name);
+
+    if (file.name === "test") file.copyTo("./test/testname");
+
+    // file.move(path);
+  });
+});
