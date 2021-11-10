@@ -1,1 +1,6 @@
-import ls from "./lib/linux/ls/ls";
+import { ls } from "./lib/commands/ls";
+import _ from "shelljs";
+
+// ls(".");
+
+const x = _.ls(".");
